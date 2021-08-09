@@ -1,0 +1,37 @@
+title: Awesome Django
+email: your-email@example.com
+description: >-
+  A curated list of awesome things related to Django. Maintained by
+  William Vincent and Jeff Triplett
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://awesome-django.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-optional-front-matter
+include:
+  - README.md
+exclude:
+  - "*.md"
+  - Gemfile*
+  - justfile
+  - LICENSE
+  - Makefile
+  - modd.conf
+  - node_modules
+  - package*.json
+  - postcss.config.js
+  - src
+  - tailwind.config.js
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  - scope:
+      path: "README.md"
+    values:
+      permalink: "/"
+      layout: "default"
